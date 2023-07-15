@@ -1,0 +1,157 @@
+/* Fonts import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* .auto-align {
+  max-width: 1920px;
+  margin: 0 auto;
+} */
+
+/* Common styles to share */
+.default-margin {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.common-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #FF900E;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.common-h3 {
+  color: var(--dark-01, #131313);
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.common-h1 {
+  color: var(--dark-01, #131313);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.common-p {
+  color: var(--dark-03, #727272);
+  font-size: .9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.gray-col-txt {
+  color: var(--dark-03, #727272);
+}
+
+.orange-col-txt {
+  color: #FF900E;
+}
+
+/* Navbar style starts */
+header {
+  background: rgba(255, 144, 14, 0.10);
+  padding-bottom: 3rem;
+}
+
+nav {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.8rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--dark-02, #424242);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/* Header banner starts */
+.banner {
+  padding-top: 5.5rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.banner h1 {
+  padding-bottom: 1.1rem;
+}
+
+.banner p {
+  padding-bottom: 1.1rem;
+}
+
+/* Banner image start */
+.banner-section img {
+  width: 100%;
+}
+
+/* Quick list features section */
+
+.quick-list-sec {
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quick-list-img {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+/* .quick-list-img img {
+  width: 100%;
+} */
+
+.quick-list-contents {
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+.quick-list-contents h3 {
+  padding-bottom: 1.4rem;
+}
+
+.quick-list-contents p {
+  padding-bottom: 1.4rem;
+}
