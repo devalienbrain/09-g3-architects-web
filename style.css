@@ -8,11 +8,6 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-/* .auto-align {
-  max-width: 1920px;
-  margin: 0 auto;
-} */
-
 /* Common styles to share */
 .default-margin {
   margin-left: 9rem;
@@ -66,11 +61,12 @@
 /* Navbar style starts */
 header {
   background: rgba(255, 144, 14, 0.10);
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 nav {
-  padding-top: 3rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,23 +92,22 @@ nav ul a {
 
 /* Header banner starts */
 .banner {
-  padding-top: 5.5rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  margin-top: 5.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .banner h1 {
-  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
 }
 
 .banner p {
-  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
 }
 
 /* Banner image start */
@@ -146,14 +141,16 @@ nav ul a {
   flex: 1;
   padding-left: 2rem;
   padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .quick-list-contents h3 {
-  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .quick-list-contents p {
-  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 /* Lovely features section start */
@@ -166,7 +163,8 @@ nav ul a {
 }
 
 .feature-contents {
-  padding-right: 4rem;
+  margin-right: 4rem;
+  padding: 1rem;
 }
 
 .feature-contents h3 {
@@ -194,7 +192,7 @@ nav ul a {
 /* 10 Years experience part starts */
 
 .experience-container {
-  border-radius: 8px;
+  border-radius: .5rem;
   background: #FF900E;
   text-align: center;
   color: #FFF;
@@ -219,7 +217,7 @@ nav ul a {
 }
 
 .feature-img img {
-  padding-left: 5rem;
+  margin-left: 5rem;
 }
 
 /* Facts section */
@@ -280,8 +278,36 @@ nav ul a {
 footer {
   margin-top: 7rem;
   margin-bottom: 11rem;
-  border-radius: 8px;
+  border-radius: .5rem;
   background: #FFF4E7;
   padding: 2rem;
   text-align: center;
+}
+
+/* Responsive styles start */
+/* Responsive for mobile devices */
+@media screen and (max-width: 576px) {
+
+  nav,
+  nav ul,
+  .banner,
+  .quick-list-sec,
+  .feature-sec,
+  .facts-card-container,
+  .facts-card-container,
+  .sponsor-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quick-list-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .feature-img img {
+    width: 100%;
+  }
+
 }
