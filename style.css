@@ -200,8 +200,9 @@ nav ul a {
   background: #FF900E;
   text-align: center;
   color: #FFF;
-  padding: 1.8rem 1rem;
-  width: 50%;
+  padding: 1.8rem 2.5rem;
+  /* width: 50%; */
+  max-width: fit-content;
   position: relative;
   bottom: 8rem;
 }
